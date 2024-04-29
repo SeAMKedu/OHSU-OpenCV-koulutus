@@ -44,7 +44,7 @@ Myös gaussilaisen pehmennyksen tuottavan suotimen kernelin kaikkien painojen su
  Funktiolla `GaussianBlur` on kuvan ja kernelin koon lisäksi kolmas pakollinen parametri `sigmaX` ja sen lisäksi valinnainen parametri `sigmaY`. Sigma ($\sigma$) tarkoittaa keskihajontaa ja sillä voi vaikuttaa kellokäyrän muotoon, kuten seuraava kuva näyttää. Parametrit `sigmaX` ja `sigmaY` siis määrittävät, kuinka jyrkästi painot putoavat X- ja Y-suuntaan. Yleensä `sigmaX`:n arvona käytetään nollaa, ja tällöin sen arvo lasketaan kernelin koon perusteella siten, että suodin "leviää" mahdollisimman laajasti kernelin alueelle. Parametrin `sigmaY` oletusarvo on niin ikään nolla, mikä tarkoittaa, että sen arvona käytetään samaa kuin `sigmaX`:n. Jos taas kernelin kooksi annetaan (0, 0), kernelin koko lasketaan annetun/annettujen sigma-arvojen avulla.
 
 
-<img src="[https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Normal_Distribution_PDF.svg/640px-Normal_Distribution_PDF.png](https://upload.wikimedia.org/wikipedia/commons/7/74/Normal_Distribution_PDF.svg)" alt="Gaussin käyrä eri keskihajonnoilla ja huipun paikalla" width="500"/> \
+<img src="https://upload.wikimedia.org/wikipedia/commons/7/74/Normal_Distribution_PDF.svg" alt="Gaussin käyrä eri keskihajonnoilla ja huipun paikalla" width="500"/> \
 *Gaussin käyrä eri keskihajonnoilla ($\sigma$) ja huipun paikalla ($\mu$).*
 
 Funktiota käytetään seuraavalla tavalla. Koodinpätkän jälkeen esimerkki eri kernelin koilla suodatetuista kuvista.
